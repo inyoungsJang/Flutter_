@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_1/egipt/egypt.dart';
 import 'package:flutter_web_1/pages/device_info/flutter_exaple.dart';
-import 'package:flutter_web_1/device_model2.dart';
-import 'package:flutter_web_1/device_model3.dart';
+import 'package:flutter_web_1/style/neumorphic_form.dart';
+import 'package:flutter_web_1/style/style_button_page.dart';
 
 void main() {
   runApp(MyApp());

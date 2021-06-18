@@ -2,11 +2,12 @@ import 'dart:io';
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_web_1/egipt/egypt.dart';
 import 'package:flutter_web_1/pages/desktop_/d_main.dart';
 import 'package:flutter_web_1/pages/mobile_/m_main.dart';
 
 class FlutterExample extends StatefulWidget {
-  FlutterExample({Key key}) : super(key: key);
+  //FlutterExample({Key key}) : super(key: key);
   @override
   _FlutterExampleState createState() => _FlutterExampleState();
 }
@@ -49,16 +50,17 @@ class _FlutterExampleState extends State<FlutterExample> {
         deviceValue = true;
       });
     }
-    return deviceValue;
+    //return deviceValue;
   }
 
   Widget device() {
     if (deviceValue) {
       // 웹 위젯
-      return DeskTopMain();
+      return EgyptPage();
     } else {
       // 모바일 위젯
-      return MobileMain();
+      return SafeArea(child: EgyptPage());
+      //MobileMain();
     }
   }
 
